@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "kyunyuuvisuals",
+  "version": "${version}",
+  "name": "KyunyuuVisuals",
+  "description": "KyunyuuVisuals - a minimalist, modern visual client for Minecraft 1.21.4 with an animated click GUI, blur, HUD modules and quality-of-life visuals.",
+  "authors": [
+    "Kyunyuu"
+  ],
+  "license": "MIT",
+  "icon": "assets/kyunyuuvisuals/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.kyunyuu.visuals.KyunyuuVisuals"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "kyunyuuvisuals.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
